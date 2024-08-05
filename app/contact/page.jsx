@@ -15,7 +15,6 @@ import {
 } from '@/components/ui/select';
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Description } from '@radix-ui/react-dialog';
 
 const info = [
   {
@@ -31,7 +30,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: 'Address',
-    description: 'XXXXX',
+    description: 'lorem Ipsum is simply dummy text',
   },
 ];
 
@@ -47,7 +46,7 @@ const Contact = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-[30px]'>
           {/* form */}
-          <div className='xl:h-[54%] order-2 xl:order-none'>
+          <div className='xl:w-[54%] order-2 xl:order-none'>
             <form className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
               <h3 className='text-4xl text-accent'>Let&apos;s work together</h3>
               <p className='text-white/60'>
