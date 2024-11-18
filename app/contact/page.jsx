@@ -27,11 +27,6 @@ const info = [
     title: "Email",
     description: "rossgellerdev@gmail.com",
   },
-  {
-    icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "lorem Ipsum is simply dummy text",
-  },
 ];
 
 import { motion } from "framer-motion";
