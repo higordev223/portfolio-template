@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Template ( Next.js, ShadcnUI, TailwindCSS & Framer Motion )
 
-## Getting Started
+Are you finding it challenging to build a professional portfolio website? Don’t worry! With the Developer Portfolio template, you can effortlessly create a personalized portfolio that suits your style. Designed for ease of use and customization, this template is ideal for both developers and freelancers. Start building your portfolio today!
 
-First, run the development server:
+### Website preview
+
+<p align="center"> 
+  <kbd>
+    <a href="https://ross-portfolio-template.vercel.app" target="_blank"><img src="public/assets/preview.png">
+  </a>
+  </kbd>
+</p>
+
+:star: Star me on GitHub — it helps!
+
+## Features 📋
+
+⚡️ Fully Responsive\
+⚡️ Next.js, Shadcn/ui, TailwindCSS\
+⚡️ Animation using `Framer Motion`\
+⚡️ Easy to modify
+
+## Sections :bookmark:
+
+✔️ Home\
+✔️ Services\
+✔️ Resume \
+✔️ Work \
+✔️ Contact
+
+### Installation :arrow_down:
+
+#### You will need to download Git and Node to run this project
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+
+#### Ensure that your computer has the stable or latest versions of both Git and Node installed.
+
+```bash
+node --version
+git --version
+```
+
+### Getting Started :dart:
+
+#### Fork and Clone the repo
+
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+
+```bash
+git clone https://github.com/<YOUR GITHUB USERNAME>/portfolio-template.git
+
+cd portfolio-template
+```
+
+#### Install packages from the root directory
+
+```bash
+npm install
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tools Used 🛠️
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [<b>Shadcn</b>](https://ui.shadcn.com/) - Customizable component library for building modern web apps.
+- [<b>Tailwind CSS</b>](https://tailwindcss.com/) - Utility-first CSS framework with predefined classes.
+- [<b>Motion</b>](https://motion.dev/) - A modern animation library for JavaScript and React
+- [<b>Swiper</b>](https://swiperjs.com/) - The most modern mobile touch slider
 
-## Learn More
+## Contributing 💡
 
-To learn more about Next.js, take a look at the following resources:
+#### Step 1
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Option 1**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - 🍴 Fork this repo!
 
-## Deploy on Vercel
+- **Option 2**
+  - 👯 Clone this repo to your local machine.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Step 2
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Build your code** 🔨🔨🔨
+
+#### Step 3
+
+- 🔃 Create a new pull request.
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
