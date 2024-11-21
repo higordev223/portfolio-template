@@ -30,7 +30,7 @@ const about = {
     },
     {
       fieldName: "Skype",
-      fieldValue: "flowerman113",
+      fieldValue: "yourskype",
     },
     {
       fieldName: "Nationality",
@@ -38,7 +38,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "rossgellerdev@gmail.com",
+      fieldValue: "youremail@email.com",
     },
     {
       fieldName: "Freelance",
@@ -210,7 +210,7 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl: text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
@@ -242,7 +242,7 @@ const Resume = () => {
 
             {/* education */}
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl: text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
