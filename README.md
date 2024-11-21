@@ -28,7 +28,7 @@ Are you finding it challenging to build a professional portfolio website? Don’
 ✔️ Work \
 ✔️ Contact
 
-### Installation :arrow_down:
+## Installation :arrow_down:
 
 #### You will need to download Git and Node to run this project
 
@@ -42,7 +42,7 @@ node --version
 git --version
 ```
 
-### Getting Started :dart:
+## Getting Started :dart:
 
 #### Fork and Clone the repo
 
