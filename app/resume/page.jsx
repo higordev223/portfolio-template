@@ -18,7 +18,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Ross Geller",
+      fieldValue: "Higor",
     },
     {
       fieldName: "Phone",
@@ -211,8 +211,10 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary dark:text-text-primary">
+                  {experience.title}
+                </h3>
+                <p className="max-w-[600px] text-text-secondary dark:text-text-secondary mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -221,16 +223,18 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-secondary dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary dark:text-text-primary">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent "></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-text-secondary dark:text-text-secondary">
+                              {item.company}
+                            </p>
                           </div>
                         </li>
                       );
@@ -243,8 +247,10 @@ const Resume = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary dark:text-text-primary">
+                  {education.title}
+                </h3>
+                <p className="max-w-[600px] text-text-secondary dark:text-text-secondary mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -253,16 +259,18 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-secondary dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary dark:text-text-primary">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent "></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-text-secondary dark:text-text-secondary">
+                              {item.institution}
+                            </p>
                           </div>
                         </li>
                       );
@@ -276,8 +284,10 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <h3 className="text-4xl font-bold text-text-primary dark:text-text-primary">
+                    {skills.title}
+                  </h3>
+                  <p className="max-w-[600px] text-text-secondary dark:text-text-secondary mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -287,8 +297,8 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[150px] bg-secondary dark:bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300 text-text-primary dark:text-text-primary">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
@@ -310,8 +320,10 @@ const Resume = () => {
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-text-primary dark:text-text-primary">
+                  {about.title}
+                </h3>
+                <p className="max-w-[600px] text-text-secondary dark:text-text-secondary mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
@@ -321,8 +333,12 @@ const Resume = () => {
                         key={index}
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="text-text-secondary dark:text-text-secondary">
+                          {item.fieldName}
+                        </span>
+                        <span className="text-xl text-text-primary dark:text-text-primary">
+                          {item.fieldValue}
+                        </span>
                       </li>
                     );
                   })}

@@ -1,36 +1,45 @@
-import * as React from 'react';
-import { Slot } from '@radix-ui/react-slot';
-import { cva } from 'class-variance-authority';
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { cva } from "class-variance-authority";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-colors',
+  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white dark:ring-offset-primary transition-colors duration-300",
   {
     variants: {
       variant: {
-        default: 'bg-accent text-primary hover:bg-accent-hover',
-        primary: 'bg-primary text-white',
+        default: "bg-accent text-primary hover:bg-accent-hover",
+        primary:
+          "bg-primary dark:bg-primary text-text-primary dark:text-text-primary hover:bg-secondary dark:hover:bg-secondary border border-border dark:border-border",
         outline:
-          'border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary',
+          "border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary dark:hover:text-primary",
       },
       size: {
-        default: 'h-[44px] px-6',
-        md: 'h-[48px] px-6',
-        lg: 'h-[56px] px-8 text-sm uppercase tracking-[2px]',
+        default: "h-[44px] px-6",
+        md: "h-[48px] px-6",
+        lg: "h-[56px] px-8 text-sm uppercase tracking-[2px]",
       },
     },
     defaultVariants: {
-      variant: 'default',
-      size: 'default',
+      variant: "default",
+      size: "default",
     },
   }
 );
 
-const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-  const Comp = asChild ? Slot : 'button';
-  return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
-});
-Button.displayName = 'Button';
+const Button = React.forwardRef(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    return (
+      <Comp
+        className={cn(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+Button.displayName = "Button";
 
 export { Button, buttonVariants };

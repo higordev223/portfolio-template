@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   {
@@ -39,8 +40,8 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl mx-auto">
           <Link href="/">
-            <h1 className="text-4xl font-semibold">
-              Ross<span className="text-accent">.</span>
+            <h1 className="text-4xl font-semibold text-text-primary dark:text-text-primary">
+              Higor<span className="text-accent">.</span>
             </h1>
           </Link>
         </div>
@@ -54,12 +55,16 @@ const MobileNav = () => {
                 className={`${
                   link.path === pathname &&
                   "text-accent border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
+                } text-xl capitalize hover:text-accent transition-all text-text-primary dark:text-text-primary`}
               >
                 {link.name}
               </Link>
             );
           })}
+          {/* Theme toggle for mobile */}
+          <div className="mt-4">
+            <ThemeToggle />
+          </div>
         </nav>
       </SheetContent>
     </Sheet>

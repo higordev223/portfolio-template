@@ -4,7 +4,40 @@
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary dark:bg-primary text-text-primary dark:text-text-primary leading-loose transition-colors duration-300;
+  }
+  
+  /* Light mode overrides */
+  .light body {
+    @apply bg-primary-light text-text-light-primary;
+  }
+  
+  /* Light mode text color utilities */
+  .light .text-text-primary {
+    @apply text-text-light-primary;
+  }
+  
+  .light .text-text-secondary {
+    @apply text-text-light-secondary;
+  }
+  
+  /* Ensure proper contrast for headings in light mode */
+  .light h1,
+  .light h2,
+  .light h3,
+  .light h4,
+  .light h5,
+  .light h6 {
+    @apply text-text-light-primary;
+  }
+  
+  /* Light mode accent color adjustments - accent color works the same in both themes */
+  
+  /* Ensure all text elements have proper contrast in light mode */
+  .light span,
+  .light p,
+  .light div {
+    @apply text-text-light-primary;
   }
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
