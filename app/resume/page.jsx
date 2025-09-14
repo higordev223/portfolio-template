@@ -22,23 +22,19 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+86) 123 456 789",
+      fieldValue: "(+55)85998338930",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "yourskype",
+      fieldValue: "6+ Years",
     },
     {
       fieldName: "Nationality",
-      fieldValue: "Chinese",
+      fieldValue: "Brazilian",
     },
     {
       fieldName: "Email",
-      fieldValue: "youremail@email.com",
+      fieldValue: "higorsantiagodev@outlook.com",
     },
     {
       fieldName: "Freelance",
@@ -46,7 +42,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Chinese",
+      fieldValue: "English, Portuguese",
     },
   ],
 };
@@ -223,7 +219,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#f1f5f9] dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary dark:text-text-primary">
@@ -259,7 +255,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-secondary dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#f1f5f9] dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left text-text-primary dark:text-text-primary">
@@ -297,7 +293,7 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-secondary dark:bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#f1f5f9] dark:bg-[#232329] rounded-xl flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-300 text-text-primary dark:text-text-primary">
                                 {skill.icon}
                               </div>
@@ -331,12 +327,18 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className={`flex items-center justify-center xl:justify-start gap-4 ${
+                          item.fieldName === "Email" ? "xl:col-span-2" : ""
+                        }`}
                       >
                         <span className="text-text-secondary dark:text-text-secondary">
                           {item.fieldName}
                         </span>
-                        <span className="text-xl text-text-primary dark:text-text-primary">
+                        <span
+                          className={`text-xl text-text-primary dark:text-text-primary ${
+                            item.fieldName === "Email" ? "break-all" : ""
+                          }`}
+                        >
                           {item.fieldValue}
                         </span>
                       </li>

@@ -20,12 +20,12 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+86) 123 456 789",
+    description: "(+55) 85998338930",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@email.com",
+    description: "higorsantiagodev@email.com",
   },
   {
     icon: <FaMapMarkerAlt />,
@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-secondary dark:bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-6 p-10 bg-slate-100 dark:bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-text-secondary dark:text-text-secondary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,10 +59,26 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="firstname"
+                  placeholder="Firstname"
+                  className="text-white"
+                />
+                <Input
+                  type="lastname"
+                  placeholder="Lastname"
+                  className="text-white"
+                />
+                <Input
+                  type="email"
+                  placeholder="Email address"
+                  className="text-white"
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  className="text-white"
+                />
               </div>
               {/* select */}
               <Select>
@@ -80,7 +96,7 @@ const Contact = () => {
               </Select>
               {/* textarea */}
               <Textarea
-                className="h-[200px]"
+                className="h-[200px] text-white"
                 placeholder="Type your message here"
               />
               {/* btn */}
@@ -95,7 +111,7 @@ const Contact = () => {
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-secondary dark:bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-slate-100 dark:bg-[#27272c] text-accent rounded-md flex items-center justify-center">
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
